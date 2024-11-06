@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import featured3 from '../../../assets/images/featured/featured3.svg';
 import foodbg from '../../../assets/images/background/firstfeaturebg.svg';
-import { LuPhoneCall } from "react-icons/lu";
 import Service from './Service';
 import MarketExperienceCard from './MarketExperienceCard';
 
@@ -26,7 +25,7 @@ export default function MainPortion() {
                     <button className="bg-yellow-500 text-black px-4 py-2 font-poppins font-semibold text-sm">ABOUT MORE</button>
 
                     <button className="flex items-center gap-2 mt-2">
-                        <LuPhoneCall className='text-customred font-semibold' />
+                        <img src="/icon/call.svg" alt="" />
                         <p className="text-black font-poppins font-semibold text-sm">+88 3426 739 485</p>
                     </button>
                 </div>
