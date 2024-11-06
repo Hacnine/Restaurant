@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import logo from '../../assets/images/logos/sitelogo.svg';
-import { IoMenu } from "react-icons/io5";
 import Sidebar from './Sidebar'; // Import the Sidebar component
 import { Link } from 'react-router-dom';
 
@@ -34,7 +33,7 @@ const Navbar = () => {
                             Book a Table
                         </button>
                         <button onClick={toggleSidebar} className="text-white text-2xl lg:hidden block">
-                            <IoMenu />
+                            <img src="/icon/call.svg" alt="" />
                         </button>
                     </div>
                 </navbar>
