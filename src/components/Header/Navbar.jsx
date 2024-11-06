@@ -19,7 +19,7 @@ const Navbar = () => {
                         <div className="center gap-10">
                             <div className="center gap-2">
                                 <img src={logo} alt="Site Logo" />
-                                <p className="text-4xl font-poppins">Restaurant</p>
+                                <p className="text-4xl text-white font-poppins">Restaurant</p>
                             </div>
                             <nav className="hidden lg:flex space-x-6">
                                 <Link to={'/'}  className="hover:text-yellow-400">Home</Link>
