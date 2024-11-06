@@ -1,12 +1,15 @@
-// src/components/Header.js
+
 import React from 'react';
-import Menu from '../Menu';
+import Navbar from './Navbar';
+import Hero from '../Hero';
+import Headroom from 'react-headroom';
 
 const Header = () => {
   return (
-    <div>
-      <Menu/>
-    </div>
+    <header className=' '>
+      
+      <Hero/>
+    </header>
   );
 };
 

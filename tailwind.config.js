@@ -3,6 +3,8 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/react-tailwindcss-datepicker/dist/index.esm.{js,ts}",
+    
   ],
   theme: {
     extend: {
@@ -14,17 +16,23 @@ export default {
      
 
       backgroundImage: {
-        // 'hero-img':  "url('public/background/.svg')",
-        // 'hero-two':  "url('/src/assets/office-bg.jpg')",
+        'hero-bg':  "url('/src/assets/images/background/bg2.svg')",
+        'fooditem': "url('/src/assets/images/background/bg3.svg')",
+        'booking': "url('/src/assets/images/background/booking.svg')",
+        'commentary': "url('/src/assets/images/background/commentarybg.svg')",
+        'commenttext': "url('/src/assets/images/background/commentbg.svg')",
+        'footer': "url('/src/assets/images/background/footer.svg')",
+     
       },
       
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        bebus: ["Bebas Neue", "sans-serif"]
         
       },
       colors: {
         
-        "dark": "#0f1729",
+        "customred": "#BD1F17",
       
         
         

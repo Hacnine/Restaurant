@@ -3,7 +3,7 @@ import logo from '../assets/images/logos/sitelogo.svg'
 
 const Menu = () => {
   return (
-    <header className="bg-red-700 text-white p-6">
+    <navbar className="bg-transparent text-white p-6 wrapper">
       <div className="container mx-auto flex justify-between items-center">
         <div className="center gap-2">
         <img src={logo} alt="" />
@@ -22,7 +22,7 @@ const Menu = () => {
           Book a Table
         </button>
       </div>
-    </header>
+    </navbar>
   );
 };
 
