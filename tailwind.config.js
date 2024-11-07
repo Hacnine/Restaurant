@@ -21,7 +21,7 @@ export default {
         'booking': "url('/src/assets/images/background/booking.svg')",
         'commentary': "url('/src/assets/images/background/commentarybg.svg')",
         'commenttext': "url('/src/assets/images/background/commentbg.svg')",
-        'footer': "url('/src/assets/images/background/footer.svg')",
+        'footer': "url('/src/assets/images/background/footer.png')",
 
         'blog': "url('/src/assets/images/background/blogbg.jpg')",
         'client': "url('/src/assets/images/background/clientbg.jpg')",
