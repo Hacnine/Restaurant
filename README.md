@@ -5,11 +5,11 @@
 
 # Project Description
 This project is a restaurant website.Initially, only the homepage was required, but the entire site has been developed to showcase a complete user experience. It includes multiple pages such as the
-**About** 
-**Portfolio**
-**Clients**
-**Blog**
-**Contact**.
+* **About** 
+* **Portfolio**
+* **Clients**
+* **Blog**
+* **Contact**.
 
 # Technologies and Frameworks
 The following frameworks and libraries were used in this project:
