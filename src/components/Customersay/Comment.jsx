@@ -1,7 +1,7 @@
 import React from 'react'
 const Commentary = () => {
     return (
-        <div className="lg:w-[45%] w-[515px]  bg-commenttext lgh-[90%] text-400 xl:p-16 p-8 ">
+        <div className="lg:w-[45%] sm:w-[515px] w-fit bg-commenttext lgh-[90%] text-400 xl:p-16 p-8 ">
             <div className="text-lg font-semibold mb-4">
                 <span><img src="/icon/quote.svg" alt="" /></span>
                 <p className="pl-4 text-xs xl:text-sm"> You can't go wrong with Chicken Mandi, I  had it twice. The chicken was cooked perfectly, juicy & soft (usually mandi chicken is a bit dry). I would definitely recommend it.</p>

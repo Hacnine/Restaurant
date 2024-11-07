@@ -32,7 +32,7 @@ const Navbar = () => {
                             Book a Table
                         </button>
                         <button onClick={toggleSidebar} className="text-white text-2xl lg:hidden block">
-                            &#x2630;
+                            <img src="/icon/menu.svg" alt="" />
                         </button>
                     </div>
                 </navbar>
