@@ -54,3 +54,5 @@ export const socialIcon = [
   "/icon/insta.svg",
   "/icon/linked.svg",
 ];
+
+export const testimonials = [1, 2, 3, 4];

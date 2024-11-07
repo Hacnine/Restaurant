@@ -2,14 +2,13 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Video from "./Video";
-import Commentary from "./Comment";
-import { foodItems } from "../../constants";
+import { testimonials } from "../../constants";
 import SectionHeader from "../Common/SectionHeader";
 import NextPrevButton from "./NextPrevButton";
+import FoodTestimonials from "./FoodTestimonials";
 
 const CommentarySlider = () => {
-  const sliderRef = useRef(null); // Add a ref
+  const sliderRef = useRef(null); 
 
   const settings = {
     dots: false,
@@ -42,13 +41,8 @@ const CommentarySlider = () => {
         </div>
       </div>
       <Slider ref={sliderRef} {...settings}> {/* Attach the ref to Slider */}
-        {foodItems.map((item, index) => (
-          <div className="w-full">
-            <div className="flex flex-col lg:flex-row items-center justify-center bg-white">
-              <Commentary />
-              <Video />
-            </div>
-          </div>
+        {testimonials.map((item, index) => (
+          <FoodTestimonials key={index}/>
         ))}
       </Slider>
       <div className="flex items-center justify-center lg:hidden mt-6 gap-4">
