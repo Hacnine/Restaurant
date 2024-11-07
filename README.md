@@ -1,9 +1,9 @@
-## Project Title:Restaurant
+### Project Title:Restaurant
 
-## Live Preview
-# [Link](https://arabcuisineresturant.netlify.app/)
+### Live Preview
+### [Link](https://arabcuisineresturant.netlify.app/)
 
-# Project Description
+### Project Description
 This project is a restaurant website.Initially, only the homepage was required, but the entire site has been developed to showcase a complete user experience. It includes multiple pages such as the
 * **About** 
 * **Portfolio**
@@ -11,7 +11,7 @@ This project is a restaurant website.Initially, only the homepage was required, 
 * **Blog**
 * **Contact**.
 
-# Technologies and Frameworks
+### Technologies and Frameworks
 The following frameworks and libraries were used in this project:
 
 ### Frontend
