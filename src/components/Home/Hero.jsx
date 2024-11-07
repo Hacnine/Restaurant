@@ -10,7 +10,7 @@ const Hero = () => {
                 {/* Text Section */}
                 <div className="md:w-1/2 ">
                     <div className="md:absolute top-18  lg:max-w-[700px] md:max-w-[400px] wo "> <h1 className="text-[55px] md:text-[45px] lg:text-[90px] leading-tight md:leading-[1.1] bg-customred/50">Taste the Authentic Saudi Cuisine</h1>
-                        <p className="mb-6 font-poppins max-w-[550px]">
+                        <p className="mb-6 font-poppins text-lg max-w-[550px]">
                             Among the best Saudi chefs in the world, serving you something beyond flavor.
                         </p>
                         <button className="bg-yellow-400 text-black py-3 px-6  font-bold">
