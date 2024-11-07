@@ -4,12 +4,16 @@
 # [Link](https://arabcuisineresturant.netlify.app/)
 
 # Project Description
-This project is a restaurant website.Initially, only the homepage was required, but the entire site has been developed to showcase a complete user experience. It includes multiple pages such as the **About**, **Portfolio**, **Clients**, **Blog** and **Contact** page.
+This project is a restaurant website.Initially, only the homepage was required, but the entire site has been developed to showcase a complete user experience. It includes multiple pages such as the
+**About** 
+**Portfolio**
+**Clients**
+**Blog**
+**Contact**.
 
 # Technologies and Frameworks
 The following frameworks and libraries were used in this project:
 
-# Frontend
 ### Frontend
 * **React** : Core library for building the user interface.
 * **React Router DOM** : Library for managing routing and navigation.

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from '../../assets/images/logos/sitelogo.svg';
 import Sidebar from './Sidebar';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -16,7 +15,7 @@ const Navbar = () => {
                     <div className="container mx-auto flex justify-between items-center ">
                         <div className="center gap-10">
                             <Link to={'/'} className="center gap-2">
-                                <img src={logo} alt="Site Logo" />
+                                <img src={"/sitelogo.svg"} alt="Site Logo" />
                                 <p className="text-4xl text-white font-poppins">Restaurant</p>
                             </Link>
                             <nav className="hidden lg:flex space-x-6">
@@ -28,7 +27,7 @@ const Navbar = () => {
                                 <Link to={'/contact'} className={`border-b-2 ${location.pathname === '/contact' ? " border-yellow-400" : "text-white border-transparent"} hover:text-yellow-400 `}>Contact</Link>
                             </nav>
                         </div>
-                        <button className="bg-yellow-400 text-black px-4 py-2 font-poppins hidden font-semibold lg:block">
+                        <button className="bg-yellow-400 text-black px-4 py-2 xl:text-base text-sm font-poppins hidden font-semibold lg:block">
                             Book a Table
                         </button>
                         <button onClick={toggleSidebar} className="text-white text-2xl lg:hidden block">

@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import FoodCard from "./FoodCard";
 import { foodItems } from "../../../constants";
 import SectionHeader from "../../Common/SectionHeader";
-import NextPrevButton from "../../Customersay/NextPrevButton";
+import NextPrevButton from "../CustomerSay/NextPrevButton";
 
 const FoodItemSlider = () => {
   const sliderRef = useRef(null); // Add a ref
@@ -17,7 +17,7 @@ const FoodItemSlider = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
     pauseOnHover: true,
     responsive: [
       {
@@ -43,11 +43,13 @@ const FoodItemSlider = () => {
           <NextPrevButton sliderRef={sliderRef} />
         </div>
       </div>
-      <Slider ref={sliderRef} {...settings}> 
-        {foodItems.map((item, index) => (
-          <FoodCard key={index} name={item.name} description={item.description} image={item.image} />
-        ))}
-      </Slider>
+      <div className="lg:pl-3">
+        <Slider ref={sliderRef} {...settings}>
+          {foodItems.map((item, index) => (
+            <FoodCard key={index} name={item.name} description={item.description} image={item.image} />
+          ))}
+        </Slider>
+      </div>
       <div className="flex items-center justify-center lg:hidden mt-6 gap-4">
         <NextPrevButton sliderRef={sliderRef} />
       </div>

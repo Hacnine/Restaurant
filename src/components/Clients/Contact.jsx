@@ -7,7 +7,7 @@ const Contact = () => {
             <p className="text-lg md:text-xl mb-6">
                 Contact us to plan your next unforgettable event with our exceptional dining services.
             </p>
-            <button className="bg-white text-customred  py-2 px-6 rounded-full shadow-md hover:bg-gray-200">
+            <button className="bg-white text-customred  py-2 sm:px-6 px-8 rounded-full shadow-md hover:bg-gray-200">
                 Get in Touch
             </button>
         </section>

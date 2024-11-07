@@ -8,7 +8,7 @@ const Story = () => {
     <div className="lg:w-1/2">
       <h2 className="text-2xl  text-gray-800 mb-4">Our Story</h2>
       <p className="text-gray-600 mb-6">
-        Founded in 2021, our restaurant was built on the love for authentic, delicious food and a warm, welcoming environment. We pride ourselves on using only the freshest ingredients to craft meals that are both satisfying and memorable.
+        Founded in November, 2024, our restaurant was built on the love for authentic, delicious food and a warm, welcoming environment. We pride ourselves on using only the freshest ingredients to craft meals that are both satisfying and memorable.
       </p>
       <p className="text-gray-600">
         From our humble beginnings to where we are today, our journey has been filled with passion, dedication, and a commitment to excellence. Join us and be a part of our story as we continue to bring joy to the table.

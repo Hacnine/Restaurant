@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../../assets/images/logos/sitelogo.svg';
 import { Link, useLocation } from 'react-router-dom';
 const Sidebar = ({ isOpen, onClose }) => {
     const location = useLocation();
@@ -8,7 +7,7 @@ const Sidebar = ({ isOpen, onClose }) => {
         <div className={`fixed top-0 z-50 left-0 shadow-lg shadow-gray-300  h-full w-64 bg-hero-bg text-white transform transition-transform duration-300 md:hidden block ${isOpen ? 'translate-x-0' : '-translate-x-full'}`}>
             <div className="between py-6 px-4">
                 <div className="center gap-2">
-                    <img src={logo} alt="Site Logo" />
+                    <img src={"/sitelogo.svg"} alt="Site Logo" />
                     <p className="text-xl font-poppins">Restaurant</p>
                 </div>
                 <button onClick={onClose} className="text-white text-2xl">

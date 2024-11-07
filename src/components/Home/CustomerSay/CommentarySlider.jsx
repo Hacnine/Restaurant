@@ -2,8 +2,8 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { testimonials } from "../../constants";
-import SectionHeader from "../Common/SectionHeader";
+import { testimonials } from "../../../constants";
+import SectionHeader from "../../Common/SectionHeader";
 import NextPrevButton from "./NextPrevButton";
 import FoodTestimonials from "./FoodTestimonials";
 
