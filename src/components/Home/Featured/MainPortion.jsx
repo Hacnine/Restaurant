@@ -25,7 +25,7 @@ export default function MainPortion() {
                     <button className="bg-yellow-500 text-black px-4 py-2 font-poppins font-semibold text-sm">ABOUT MORE</button>
 
                     <button className="flex items-center gap-2 mt-2">
-                        <img src="/icon/call.svg" alt="" />
+                        <img src="/icon/call-alt.svg" alt="" />
                         <p className="text-black font-poppins font-semibold text-sm">+88 3426 739 485</p>
                     </button>
                 </div>

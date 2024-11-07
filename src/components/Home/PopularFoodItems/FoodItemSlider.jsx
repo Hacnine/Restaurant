@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,7 +9,7 @@ import NextPrevButton from "../CustomerSay/NextPrevButton";
 
 const FoodItemSlider = () => {
   const sliderRef = useRef(null); // Add a ref
-
+  
   const settings = {
     dots: false,
     infinite: true,
@@ -19,9 +19,16 @@ const FoodItemSlider = () => {
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
+    arrows: false,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1225,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 972,
         settings: {
           slidesToShow: 2,
         },
@@ -41,9 +48,11 @@ const FoodItemSlider = () => {
         <SectionHeader inspirationWord={"Crispy, Every Bite Test"} title={"Popular Food Items"} />
         <div className="lg:flex items-end justify-end gap-4 hidden">
           <NextPrevButton sliderRef={sliderRef} />
+        
         </div>
       </div>
-      <div className="lg:pl-3">
+      <div className="pl-7 min-sm:ml-10
+       max-lg:pl-2  min-md:pl-3  pt-10">
         <Slider ref={sliderRef} {...settings}>
           {foodItems.map((item, index) => (
             <FoodCard key={index} name={item.name} description={item.description} image={item.image} />

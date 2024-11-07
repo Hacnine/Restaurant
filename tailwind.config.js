@@ -45,7 +45,10 @@ export default {
         
       },
       screens: {
-        // sm: "740px",
+        "max-lg": "1225px",
+        "min-md": "972px",
+        "max-sm": "778px",
+        "min-sm": "500px"
      
       },
     },
