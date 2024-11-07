@@ -2,22 +2,22 @@ export const foodItems = [
   {
     name: "Vegetable Burger",
     description: "Barbecue Italian cuisine pizza",
-    image: "/products/burger.svg",
+    image: "/products/burger.png",
   },
   {
     name: "Special Pizza",
     description: "Barbecue Italian cuisine pizza",
-    image: "/products/pizza.svg",
+    image: "/products/pizza.png",
   },
   {
     name: "Special French Fries",
     description: "Barbecue Italian cuisine",
-    image: "/products/french.svg",
+    image: "/products/french.png",
   },
   {
     name: "Cuisine Chicken",
     description: "Japanese Cuisine Chicken",
-    image: "/products/cuisine.svg",
+    image: "/products/cuisine.png",
   },
 ];
 

@@ -1,12 +1,13 @@
 import React from 'react';
 import chefImage from '../../assets/images/featured/chefImage.png'; 
 import restaurantImage from '../../assets/images/featured/restaurantImage.jpg';
+import restaurantImage4 from '../../assets/images/featured/restaurantImage4.jpg';
 
 const About = () => {
   return (
     <div className="px-4 py-8 md:px-16 lg:px-32">
 
-      <section className="text-center pt-36 pb-24">
+      <section className="text-center pt-36 pb-8">
         <h1 className="text-3xl md:text-5xl  mb-4 ">About Us</h1>
         <p className="text-lg md:text-3xl font-bebus">
           Discover our story, our passion for great food, and our dedication to serving you.
@@ -64,13 +65,12 @@ const About = () => {
         </div>
       </section>
 
-      {/* Gallery Section */}
       <section>
         <h2 className="text-2xl text-center  mb-6">Our Gallery</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <img src={restaurantImage} alt="Restaurant Interior" className="w-full h-40 object-cover rounded-md shadow-md" />
-          <img src={chefImage} alt="Chef at Work" className="w-full h-40 object-cover rounded-md shadow-md" />
-          {/* Add more images as needed */}
+          <img src={restaurantImage4} alt="Chef at Work" className="w-full h-40 object-cover rounded-md shadow-md" />
+
           <div className="w-full h-40 bg-gray-200 rounded-md shadow-md flex items-center justify-center text-gray-500 font-semibold">
             + More
           </div>

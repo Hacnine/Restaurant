@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import logo from '../../assets/images/logos/sitelogo.svg';
-import Sidebar from './Sidebar'; // Import the Sidebar component
+import Sidebar from './Sidebar'; 
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false); // State for sidebar visibility
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false); 
 
     const toggleSidebar = () => {
-        setIsSidebarOpen(!isSidebarOpen); // Toggle the sidebar state
+        setIsSidebarOpen(!isSidebarOpen); 
     };
 
     return (
@@ -16,10 +16,10 @@ const Navbar = () => {
                 <navbar className="bg-transparent text-white wrapper">
                     <div className="container mx-auto flex justify-between items-center ">
                         <div className="center gap-10">
-                            <div className="center gap-2">
+                            <Link to={'/'} className="center gap-2">
                                 <img src={logo} alt="Site Logo" />
                                 <p className="text-4xl text-white font-poppins">Restaurant</p>
-                            </div>
+                            </Link>
                             <nav className="hidden lg:flex space-x-6">
                                 <Link to={'/'}  className="hover:text-yellow-400">Home</Link>
                                 <Link to={'/about'} className="hover:text-yellow-400">About</Link>

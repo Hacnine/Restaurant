@@ -36,14 +36,14 @@ const FoodItemSlider = () => {
   };
 
   return (
-    <div className="relative w-full mx-auto mt-8 bg-fooditem wrapper pt-10 pb-20">
+    <div className="relative w-full mx-auto md:flex-none center flex-col mt-8 bg-fooditem wrapper pt-10 pb-20">
       <div className="between w-full">
         <SectionHeader inspirationWord={"Crispy, Every Bite Test"} title={"Popular Food Items"} />
         <div className="lg:flex items-end justify-end gap-4 hidden">
           <NextPrevButton sliderRef={sliderRef} />
         </div>
       </div>
-      <Slider ref={sliderRef} {...settings}> {/* Attach the ref to Slider */}
+      <Slider ref={sliderRef} {...settings}> 
         {foodItems.map((item, index) => (
           <FoodCard key={index} name={item.name} description={item.description} image={item.image} />
         ))}

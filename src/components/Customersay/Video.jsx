@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react'
-import placeholder from '../../assets/images/products/Video.svg'
 const Video = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const videoRef = useRef(null);
@@ -15,7 +14,7 @@ const Video = () => {
                 width="100%"
                 height="900"
                 className=""
-                poster={placeholder} // Optional poster image before play
+                poster='/products/Video.png' // Optional poster image before play
             >
                 <source
                     src="https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" // Replace with actual video URL
