@@ -1,7 +1,7 @@
 
 import React from 'react';
-import featured1 from '../assets/images/featured/featured1.png';
-import featured2 from '../assets/images/featured/featured2.png';
+import featured1 from '../../assets/images/featured/featured1.png';
+import featured2 from '../../assets/images/featured/featured2.png';
 
 const Hero = () => {
     return (

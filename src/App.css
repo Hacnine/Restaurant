@@ -27,5 +27,5 @@ p{
   }
 
   .input {
-    @apply w-full transition-all duration-1000  p-2 bg-transparent focus:outline-none border border-gray-300 placeholder:pt-1.5 placeholder:text-xs font-medium placeholder:text-gray-300 resize-none 
+    @apply w-full transition-all duration-1000  p-2 bg-transparent border border-gray-300 placeholder:pt-1.5 placeholder:text-xs font-medium placeholder:text-gray-300 resize-none  focus:border-customred focus:outline-none
   }

@@ -1,7 +1,7 @@
 import React from 'react'
 import MainPortion from './MainPortion'
 import BookingForm from '../BookingForm/BookingForm'
-import Hero from '../../Hero'
+import Hero from '../Hero'
 import CommentarySlider from '../../Customersay/CommentarySlider'
 import FoodItemSlider from '../PopularFoodItems/FoodItemSlider'
 

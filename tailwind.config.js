@@ -22,6 +22,12 @@ export default {
         'commentary': "url('/src/assets/images/background/commentarybg.svg')",
         'commenttext': "url('/src/assets/images/background/commentbg.svg')",
         'footer': "url('/src/assets/images/background/footer.svg')",
+
+        'blog': "url('/src/assets/images/background/blogbg.jpg')",
+        'client': "url('/src/assets/images/background/clientbg.jpg')",
+        'contact': "url('/src/assets/images/background/contactbg.jpg')",
+        'portfolio': "url('/src/assets/images/background/portfolibg.jpg')",
+        'about': "url('/src/assets/images/background/aboutbg.jpg')",
      
       },
       
@@ -33,6 +39,7 @@ export default {
       colors: {
         
         "customred": "#BD1F17",
+        "ligherpink": "#faf7f2"
       
         
         
