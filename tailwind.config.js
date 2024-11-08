@@ -28,6 +28,12 @@ export default {
         'contact': "url('/src/assets/images/background/contactbg.jpg')",
         'portfolio': "url('/src/assets/images/background/portfolibg.jpg')",
         'about': "url('/src/assets/images/background/aboutbg.jpg')",
+
+        'chef': "url('/src/assets/images/background/chef.jpg')",
+        'contactus': "url('/src/assets/images/background/contactus.jpg')",
+        'client': "url('/src/assets/images/background/client.jpg')",
+        'customersay': "url('/src/assets/images/background/customersay.jpg')",
+       
      
       },
       

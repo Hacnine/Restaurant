@@ -2,7 +2,7 @@ import React from 'react'
 
 const Subscription = () => {
     return (
-        <section className="text-center py-8 bg-customred text-white  shadow-md">
+        <section className=" wrapper text-center py-8 bg-customred text-white  shadow-md">
             <h2 className="text-2xl md:text-3xl  mb-4">Subscribe to Our Blog</h2>
             <p className="text-lg md:text-xl mb-6">
                 Get the latest updates on recipes, cooking tips, and exclusive offers directly to your inbox.

@@ -14,7 +14,7 @@ const About = () => {
 
 
   return (
-    <div className=" py-8 wrapper">
+    <div className=" py-8">
       <Hero />
       <Story />
       <Values />

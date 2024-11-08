@@ -2,8 +2,8 @@ import React from 'react'
 
 const Testimonials = () => {
   return (
-    <section>
-        <h2 className="text-2xl font-semi text-center  mb-6">What Our Clients Say</h2>
+    <section className='wrapper bg-client py-12'>
+        <h2 className="text-2xl font-semi text-center text-white  mb-6">What Our Clients Say</h2>
         <div className="space-y-8 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white p-6 shadow-lg ">
             <p className="">"Exceptional service and exquisite dishes – truly unforgettable!"</p>

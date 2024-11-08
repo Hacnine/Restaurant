@@ -2,7 +2,7 @@ import React from 'react'
 
 const Map = () => {
     return (
-        <section className="mb-12">
+        <section className="mb-12 wrapper">
             <h2 className="text-2xl  text-gray-800 mb-6 text-center">Find Us Here</h2>
             <div className="w-full h-72 md:h-96 bg-gray-200  overflow-hidden shadow-md">
                 {/* Embedded Google Map */}

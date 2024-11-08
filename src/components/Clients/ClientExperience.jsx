@@ -2,7 +2,7 @@ import React from 'react'
 
 const ClientExperience = () => {
     return (
-        <section className="bg-gray-100 p-8  shadow-md mb-12">
+        <section className="bg-gray-100 p-8 wrapper  shadow-md mb-12">
             <h2 className="text-2xl  text-center text-black mb-6">Client Experiences</h2>
             <p className="text-center text-black mb-6">
                 Our clients have shared their memorable experiences with us, and we’re proud to have been a part of their celebrations.

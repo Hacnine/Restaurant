@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactForm = () => {
     return (
-        <section className="bg-white p-8  shadow-md mb-12">
+        <section className="bg-white p-8  shadow-md mb-12 wrapper">
             <h2 className="text-2xl  text-gray-800 mb-6">Send Us a Message</h2>
             <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -31,7 +31,7 @@ const ContactForm = () => {
                     className="w-full input"
                     required
                 ></textarea>
-                <button className="bg-yellow-400 text-white  py-3 px-6  shadow-md hover:bg-red-700 transition duration-300">
+                <button className="bg-yellow-500 text-white  py-3 px-6  shadow-md hover:bg-red-700 transition duration-300">
                     Send Message
                 </button>
             </form>

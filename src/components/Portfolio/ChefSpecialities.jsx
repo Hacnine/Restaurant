@@ -2,9 +2,9 @@ import React from 'react'
 
 const ChefSpecialities = () => {
     return (
-        <section className="bg-gray-100 p-8  shadow-md mb-12">
-            <h2 className="text-2xl font-semi text-center  mb-6">Chef's Specialities</h2>
-            <p className="text-center  mb-6">
+        <section className=" bg-chef p-8  shadow-md mb-12 ">
+            <h2 className="text-2xl text-white text-center  mb-6">Chef's Specialities</h2>
+            <p className="text-center text-white font-semibold font-poppins mb-6">
                 Our chef’s hand-picked selections showcase the very best of our culinary skills and creativity.
             </p>
             <div className="flex flex-wrap justify-center gap-6">

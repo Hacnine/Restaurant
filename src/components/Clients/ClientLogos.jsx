@@ -6,7 +6,7 @@ import clientLogo3 from '../../assets/images/clients/client-3.png';
 import clientLogo4 from '../../assets/images/clients/client-4.png';
 const ClientLogos = () => {
   return (
-    <section className="bg-gray-100 py-8 px-4  shadow-md mt-20 mb-12">
+    <section className="bg-gray-100 py-8 px-4  shadow-md mt-20 mb-12  wrapper">
         <h2 className="text-2xl  text-center text-black mb-6">Trusted By</h2>
         <div className="flex flex-wrap justify-center gap-8">
           <img src={clientLogo1} alt="Client 1" className="h-16 w-16 md:h-20 md:w-20 object-contain" />

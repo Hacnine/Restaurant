@@ -3,9 +3,9 @@ import portfolioImage3 from '../../assets/images/portfolio/portfolioImage3.jpg';
 import portfolioImage2 from '../../assets/images/portfolio/portfolioImage2.jpg';
 const EventCatering = () => {
     return (
-        <section className="mb-12">
+        <section className="mb-12 wrapper">
             <h2 className="text-2xl font-semi  mb-6 text-center">Event Catering</h2>
-            <p className="text-center  mb-10">
+            <p className="text-center  font-poppins font-semibold mb-10">
                 Make your special occasions unforgettable with our tailored catering services.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
