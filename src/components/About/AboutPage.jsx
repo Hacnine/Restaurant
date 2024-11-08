@@ -3,6 +3,7 @@ import Hero from './Hero';
 import Story from './Story';
 import Values from './Values';
 import Testimonials from './Testimonials';
+import Gallery from './Gallery';
 import { useLocation } from 'react-router-dom';
 
 const About = () => {
@@ -19,6 +20,7 @@ const About = () => {
       <Story />
       <Values />
       <Testimonials />
+      <Gallery/>
     </div>
   );
 };
