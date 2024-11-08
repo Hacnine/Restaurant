@@ -51,8 +51,7 @@ const FoodItemSlider = () => {
         
         </div>
       </div>
-      <div className="pl-3 min-sm:ml-10
-       max-lg:pl-2  min-md:pl-3  pt-10">
+      <div className="pl-2 sc-390:pl-4 sc-414:pl-6 sc-430:pl-[34px]   pt-10">
         <Slider ref={sliderRef} {...settings}>
           {foodItems.map((item, index) => (
             <FoodCard key={index} name={item.name} description={item.description} image={item.image} />
