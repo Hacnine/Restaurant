@@ -7,6 +7,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 h1, h2, h3{
   @apply md:text-4xl text-3xl font-bebus mb-4 ;
 }
@@ -14,7 +15,7 @@ p{
   @apply font-poppins text-sm
 }
 .wrapper {
-    @apply max-w-[1368px] sm:px-[24px] md:px-[100px] px-[16px] mx-auto;
+    @apply max-w-[1368px] sm:px-[24px] md:px-[100px] px-[16px] overflow-hidden mx-auto;
   }
   .center {
     @apply flex items-center justify-center

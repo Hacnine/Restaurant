@@ -51,7 +51,7 @@ const FoodItemSlider = () => {
         
         </div>
       </div>
-      <div className="pl-7 min-sm:ml-10
+      <div className="pl-3 min-sm:ml-10
        max-lg:pl-2  min-md:pl-3  pt-10">
         <Slider ref={sliderRef} {...settings}>
           {foodItems.map((item, index) => (
