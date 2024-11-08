@@ -25,11 +25,9 @@ const BookingForm = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-    if (name === "totalPeople") {
-      if (value < 1) {
-        alert("Total people must be a positive number");
-        return;
-      }
+    if (name === "totalPeople" && value < 1) {
+      alert("Total people must be a positive number");
+      return;
     }
 
     setFormData({
@@ -66,7 +64,7 @@ const BookingForm = () => {
           totalPeople: '',
           message: '',
         });
-        setValue('');
+        setValue({ startDate: null, endDate: null });
       } else {
         setStatus({ submitted: true, success: false, error: true });
       }
@@ -87,7 +85,7 @@ const BookingForm = () => {
             placeholder="Your Name *"
             value={formData.name}
             onChange={handleChange}
-            className="w-full input"
+            className={`w-full input text-black  ${formData.name ? 'bg-[#e8f0ff]' : 'bg-transparent'}`}
             required
           />
           <input
@@ -96,18 +94,18 @@ const BookingForm = () => {
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full input"
+            className={`w-full input  text-black ${formData.email ? 'bg-[#e8f0ff]' : 'bg-transparent'}`}
             required
           />
         </div>
 
         <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-            <Datepicker
-              value={value}
-              onChange={(newValue) => setValue(newValue)}
-              inputClassName="w-full input pl-10"
-              placeholder="Reservation Date"
-            />
+          <Datepicker
+            value={value}
+            onChange={(newValue) => setValue(newValue)}
+            inputClassName={`w-full input pl-10 text-black ${value.startDate ? 'bg-[#e8f0ff]' : 'bg-transparent'}`}
+            placeholder="Reservation Date"
+          />
 
           <input
             type="number"
@@ -115,7 +113,7 @@ const BookingForm = () => {
             placeholder="Total People"
             value={formData.totalPeople}
             onChange={handleChange}
-            className="w-full input"
+            className={`w-full input text-black  ${formData.totalPeople ? 'bg-[#e8f0ff]' : 'bg-transparent'}`}
             required
           />
         </div>
@@ -125,7 +123,7 @@ const BookingForm = () => {
           placeholder="Message"
           value={formData.message}
           onChange={handleChange}
-          className="w-full input"
+          className={`w-full input text-black ${formData.message ? 'bg-[#e8f0ff]' : 'bg-transparent'}`}
           rows="4"
         />
 

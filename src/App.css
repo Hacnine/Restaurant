@@ -27,6 +27,17 @@ p{
     @apply flex items-center justify-between
   }
 
-  .input {
-    @apply w-full transition-all duration-1000  p-2 bg-transparent border border-gray-300 placeholder:pt-1.5 placeholder:text-xs font-medium placeholder:text-gray-300 resize-none  focus:border-customred focus:outline-none
-  }
+/* Base class for shared styles */
+.input-base {
+  @apply w-full transition-all duration-1000 p-2 border border-gray-300 placeholder:pt-1.5 placeholder:text-xs font-medium placeholder:text-gray-300 resize-none focus:border-customred focus:outline-none;
+}
+
+/* Extending .input from .input-base and adding unique properties */
+.input {
+  @apply input-base text-black;
+}
+
+/* Extending .input-contact from .input-base */
+.input-contact {
+  @apply input-base;
+}
