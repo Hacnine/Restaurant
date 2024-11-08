@@ -16,7 +16,7 @@ const Blog = () => {
   }, [location.pathname]);
 
   return (
-    <div className="py-8">
+    <div className="pb-8">
       <Hero />
       <FeaturedArticles />
       <RecentPosts />

@@ -9,6 +9,7 @@ This project is a restaurant website.Initially, only the homepage was required, 
 * **Clients**
 * **Blog**
 * **Contact**.
+And aditionally **Sidebar** is added for small screen.
 
 ### Technologies and Frameworks
 The following frameworks and libraries were used in this project:

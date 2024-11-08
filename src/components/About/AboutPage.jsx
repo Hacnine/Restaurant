@@ -15,7 +15,7 @@ const About = () => {
 
 
   return (
-    <div className=" py-8">
+    <div className=" pb-8">
       <Hero />
       <Story />
       <Values />
