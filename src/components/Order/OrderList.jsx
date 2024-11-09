@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useOrder } from '../../context/OrderContext';
+import { useLocation } from 'react-router-dom';
 
 
 const OrderList = () => {
     const { orders, removeOrder } = useOrder();
-  
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location.pathname]);
+
     return (
       <div className="order-list bg-gray-50 p-6 rounded-lg shadow-lg max-w-md mx-auto mt-8">
         <h2 className="text-xl mb-4 text-center text-gray-700">Your Orders</h2>
