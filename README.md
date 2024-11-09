@@ -1,7 +1,6 @@
 ### Project Title:Restaurant
 
-### Live Preview:
-https://arabcuisineresturant.netlify.app/
+### Live Preview: [Link](https://arabcuisineresturant.netlify.app/)
 
 ### Project Description
 This project is a restaurant website.Initially, only the homepage was required, but the entire site has been developed to showcase a complete user experience. And aditionally **Context Api** is added for product add and remove in **OrderList**. Hover on FoodCar, Order option will appear. **Sidebar** is added for small screen.There is another functional form in **Contact Page**.It includes multiple pages such as the
