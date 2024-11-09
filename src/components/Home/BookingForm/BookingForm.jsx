@@ -74,7 +74,7 @@ const BookingForm = () => {
   };
 
   return (
-    <div className="bg-booking bg-cover text-white px-8 pt-8 pb-16 wrapper">
+    <div className="bg-booking bg-cover text-white px-8  pt-6 pb-14 wrapper">
       <SectionHeader inspirationWord={"Book Now"} title={"BOOK YOUR TABLE"} />
 
       <form onSubmit={handleSubmit} className="space-y-4">

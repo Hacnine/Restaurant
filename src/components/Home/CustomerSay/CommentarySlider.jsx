@@ -34,7 +34,7 @@ const CommentarySlider = () => {
   };
 
   return (
-    <div className="relative w-full wrapper mx-auto mt-7 py-5 bg-commentary">
+    <div className="relative w-full wrapper mx-auto mt- py-5 bg-commentary">
       <div className="between w-full">
         <SectionHeader inspirationWord={"Crispy, Every Bite Test"} title={"What some of our customer say"} />
         <div className="lg:flex items-end justify-end gap-4 hidden">

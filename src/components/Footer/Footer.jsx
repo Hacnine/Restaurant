@@ -3,7 +3,7 @@ import { footerInfo, socialIcon } from '../../constants'
 
 const Footer = () => {
     return (
-        <div className='mt-14 pt-10  bg-center'>
+        <div className='pt-9  bg-center'>
             <footer className=' wrapper bg-footer'>
                 <h1 className=' text-white pt-10 px-4 w-full text-center'>We are ready to have you best the best dining experiences.</h1>
 
