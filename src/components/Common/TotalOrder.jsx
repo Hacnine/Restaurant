@@ -67,9 +67,54 @@ const TotalOrder = () => {
       cy={287.82596}
       r={144.36987}
     />
-    
+    {/* <text
+      xmlSpace="preserve"
+      style={{
+        fontStyle: "normal",
+        fontVariant: "normal",
+        fontWeight: "normal",
+        fontStretch: "normal",
+        fontSize: "152.531px",
+        fontFamily: "'Bauhaus 93'",
+        InkscapeFontSpecification: "'Bauhaus 93, Normal'",
+        fontVariantLigatures: "normal",
+        fontVariantCaps: "normal",
+        fontVariantNumeric: "normal",
+        fontVariantEastAsian: "normal",
+        fill: "#ff0000",
+        strokeWidth: 56.3982,
+      }}
+      x={157.58107}
+      y={338.65723}
+      id="text45244"
+    >
+      <tspan
+        sodipodi:role="line"
+        id="tspan45242"
+        style={{
+          fontStyle: "normal",
+          fontVariant: "normal",
+          fontWeight: "normal",
+          fontStretch: "normal",
+          fontSize: "152.531px",
+          fontFamily: "'Bauhaus 93'",
+          InkscapeFontSpecification: "'Bauhaus 93, Normal'",
+          fontVariantLigatures: "normal",
+          fontVariantCaps: "normal",
+          fontVariantNumeric: "normal",
+          fontVariantEastAsian: "normal",
+          fill: "#ff0000",
+          strokeWidth: 56.3982,
+        }}
+        x={157.58107}
+        y={338.65723}
+        className='center'
+      >
+        {orders.length}
+      </tspan>
+    </text> */}
   </svg>
-  <span className="absolute   right-6 top-5 text-red-600 font-bold text-lg">{orders.length}</span>
+  <span className="absolute  text-sm right-0 left-0 top-6 text-red-600 font-bold text-center  w-full">{orders.length}</span>
 
    </div>
   )
