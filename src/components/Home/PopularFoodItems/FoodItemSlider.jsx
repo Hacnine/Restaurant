@@ -55,7 +55,7 @@ const FoodItemSlider = () => {
       <div className="pl-2 min-sm:pl-16 sc-390:pl-4 sc-414:pl-6 sc-430:pl-[34px]   pt-10">
         <Slider ref={sliderRef} {...settings}>
           {foodItems.map((item, index) => (
-            <FoodCard key={index} name={item.name} description={item.description} image={item.image} />
+            <FoodCard product={item} index={index} name={item.name} description={item.description} image={item.image} price={item.price} />
           ))}
         </Slider>
       </div>

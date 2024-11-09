@@ -10,6 +10,7 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Clients from './components/Clients/Clients';
 import Blog from './components/Blog/Blog';
 import Contact from './components/Contact/Contact';
+import OrderList from './components/Order/OrderList';
 
 function App() {
   return (
@@ -23,6 +24,8 @@ function App() {
           <Route exact path="/client" element={<Clients />} />
           <Route exact path="/blog" element={<Blog />} />
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/order" element={<OrderList />} />
+
         </Routes>
         <Footer />
       </Router>

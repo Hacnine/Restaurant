@@ -1,23 +1,31 @@
 export const foodItems = [
   {
+    id: 1,
     name: "Vegetable Burger",
     description: "Barbecue Italian cuisine pizza",
     image: "/products/burger.png",
+    price: 9,
   },
   {
+    id: 2,
     name: "Special Pizza",
     description: "Barbecue Italian cuisine pizza",
     image: "/products/pizza.png",
+    price: 25,
   },
   {
+    id: 3,
     name: "Special French Fries",
     description: "Barbecue Italian cuisine",
     image: "/products/french.png",
+    price: 28,
   },
   {
+    id: 4,
     name: "Cuisine Chicken",
     description: "Japanese Cuisine Chicken",
     image: "/products/cuisine.png",
+    price: 7,
   },
 ];
 

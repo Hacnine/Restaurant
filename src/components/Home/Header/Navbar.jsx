@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import Sidebar from './Sidebar';
 import { Link, useLocation } from 'react-router-dom';
+import TotalOrder from '../../Common/TotalOrder';
+import { useOrder } from '../../../context/OrderContext';
 
 const Navbar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const location = useLocation();
+    const { orders } = useOrder();
 
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
@@ -29,12 +32,19 @@ const Navbar = () => {
                                 <Link to={'/contact'} className={`border-b-2 ${location.pathname === '/contact' ? " border-yellow-400" : "text-white border-transparent"} hover:text-yellow-400 `}>Contact</Link>
                             </nav>
                         </div>
-                        <button className="bg-yellow-400 text-black px-4 py-2 xl:text-base text-sm font-poppins font-semibold hidden lg:block">
-                            Book a Table
-                        </button>
-                        <button onClick={toggleSidebar} className="text-white text-2xl lg:hidden block">
+                        <div className="lg:flex hidden items-center justify-end gap-2 border-">
+                            <TotalOrder />
+                            <button className="bg-yellow-400 text-black px-4 py-2 xl:text-base text-sm font-poppins font-semibold hidden lg:block">
+                                Book a Table
+                            </button>
+                        </div>
+
+                        <div className="lg:hidden flex items-center gap-3">
+                        <TotalOrder />
+                        <button onClick={toggleSidebar} className="text-white text-2xl ">
                             <img src="/icon/menu.svg" alt="Menu Icon" />
                         </button>
+                        </div>
                     </div>
                 </div>
 
