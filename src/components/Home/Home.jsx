@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import MainPortion from './Featured/MainPortion'
+import FeaturedTab from './Featured/FeaturedTab'
 import BookingForm from './BookingForm/BookingForm'
 import Hero from './Hero'
 import CommentarySlider from './CustomerSay/CommentarySlider'
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className=''>
       <Hero />
-      <MainPortion />
+      <FeaturedTab />
       <FoodItemSlider />
       <BookingForm />
       <CommentarySlider />

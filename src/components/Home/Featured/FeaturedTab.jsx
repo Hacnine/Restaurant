@@ -4,7 +4,7 @@ import foodbg from '../../../assets/images/background/firstfeaturebg.svg';
 import Service from './Service';
 import MarketExperienceCard from './MarketExperienceCard';
 
-export default function MainPortion() {
+export default function FeaturedTab() {
 
     const [activeTab, setActiveTab] = useState('about');
 
@@ -18,7 +18,7 @@ export default function MainPortion() {
         about: (
             <div>
                 <h1>EXCEPTIONAL CULINARY EXPERIENCE AND DELICIOUS FOOD</h1>
-                <p className="text-black font-poppins text-base font-medium mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
+                <p className="text-black font-poppins text-base font-medium mb-4 mb-">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
 
 
                 <div className="start gap-4">
