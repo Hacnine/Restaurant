@@ -15,7 +15,7 @@ p{
   @apply font-poppins text-sm
 }
 .wrapper {
-    @apply max-w-[1368px] sm:px-[24px] md:px-[100px] px-[16px] overflow-hidden mx-auto;
+    @apply sm:px-[24px] md:px-[100px] px-[16px] overflow-hidden mx-auto;
   }
   .center {
     @apply flex items-center justify-center
