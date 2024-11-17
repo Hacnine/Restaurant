@@ -4,7 +4,7 @@ import restaurantImage4 from '../../assets/images/featured/restaurantImage4.jpg'
 
 const Gallery = () => {
   return (
-    <section className='wrapper'>
+    <section className='wrapper container mx-auto'>
         <h2 className="text-2xl text-center  mb-6">Our Gallery</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           <img src={restaurantImage} alt="Restaurant Interior" className="w-full h-40 object-cover  shadow-md" />

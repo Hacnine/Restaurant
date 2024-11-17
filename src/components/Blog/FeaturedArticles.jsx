@@ -2,7 +2,7 @@ import React from 'react'
 
 const FeaturedArticles = () => {
     return (
-        <section className="mb-12 wrapper">
+        <section className="mb-12 wrapper container mx-auto ">
             <h2 className="text-2xl  text-gray-800 mb-6 mt-20">Featured Articles</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Featured Article 1 */}

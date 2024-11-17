@@ -15,7 +15,7 @@ const Clients = () => {
   }, [location.pathname]);
 
   return (
-    <div className="container mx-auto pb-8 ">
+    <div className="pb-8 ">
       <Hero />
       <ClientLogos />
       <Testimonials />

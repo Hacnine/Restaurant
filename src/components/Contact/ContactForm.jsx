@@ -51,9 +51,10 @@ const ContactForm = () => {
     };
 
     return (
-        <section className="bg-slate-900 p-8 shadow-md mb-12 wrapper">
+        <section className="bg-slate-900 p-8 shadow-md mb-12  wrapper">
+            <div className="container wrapper">
             <h2 className="text-2xl mb-6 text-white">Send Us a Message</h2>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6 ">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <input
                         type="text"
@@ -103,6 +104,7 @@ const ContactForm = () => {
             {status.submitted && status.error && (
                 <p className="mt-4 text-red-500">Oops! Something went wrong. Please try again.</p>
             )}
+            </div>
         </section>
     );
 };

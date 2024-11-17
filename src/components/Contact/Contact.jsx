@@ -14,7 +14,7 @@ const Contact = () => {
   }, [location.pathname]);
 
   return (
-    <div className="pb-8 container mx-auto">
+    <div className="pb-8">
       <Hero />
       <ContactDetails />
       <ContactForm />

@@ -23,7 +23,7 @@ const Navbar = () => {
                                 <img src={"/sitelogo.svg"} alt="Site Logo" />
                                 <p className="text-4xl font-poppins">Restaurant</p>
                             </Link>
-                            <nav className="hidden lg:flex space-x-6">
+                            <nav className="hidden text-lg lg:flex space-x-6">
                                 <Link to={'/'} className={`border-b-2 ${location.pathname === '/' ? " border-yellow-400" : "text-white border-transparent"} hover:text-yellow-400 `}>Home</Link>
                                 <Link to={'/about'} className={`border-b-2 ${location.pathname === '/about' ? " border-yellow-400" : "text-white border-transparent"} hover:text-yellow-400 `}>About</Link>
                                 <Link to={'/portfolio'} className={`border-b-2 ${location.pathname === '/portfolio' ? " border-yellow-400" : "text-white border-transparent"} hover:text-yellow-400 `}>Portfolio</Link>

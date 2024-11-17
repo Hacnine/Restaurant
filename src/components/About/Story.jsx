@@ -3,7 +3,7 @@ import chefImage from '../../assets/images/featured/chefImage.png';
 
 const Story = () => {
   return (
-    <section className="flex wrapper flex-col lg:flex-row items-center gap-8 mt-20 mb-12">
+    <section className="flex wrapper flex-col lg:flex-row items-center gap-8 mt-20 mb-12 container mx-auto">
     <img src={chefImage} alt="Our Chef" className="w-full h-full lg:w-80 shadow-md" />
     <div className="lg:w-1/2">
       <h2 className="text-2xl  text-gray-800 mb-4">Our Story</h2>
