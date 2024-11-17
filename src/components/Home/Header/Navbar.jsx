@@ -14,10 +14,10 @@ const Navbar = () => {
     };
 
     return (
-        <div className="sticky top-0 z-50 w-full  ">
-            <div className=" wrapper bg-hero-bg mx-auto w-full relative z-40">
+        <div className="sticky top-0 z-50 w-full bg-hero-bg ">
+            <div className=" container  mx-auto wrapper  w-full relative z-40">
                 <div className="bg-transparent text-white">
-                    <div className="container mx-auto flex justify-between items-center  py-4">
+                    <div className="flex justify-between items-center  py-4">
                         <div className="flex items-center gap-10">
                             <Link to={'/'} className="flex items-center gap-2">
                                 <img src={"/sitelogo.svg"} alt="Site Logo" />

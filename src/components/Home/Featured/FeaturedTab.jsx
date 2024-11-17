@@ -47,9 +47,9 @@ export default function FeaturedTab() {
 
 
     return (
-        <div className="bg-white wrapper relative mt-20 ">
+        <div className="bg-white  wrapper container mx-auto   mt-20 ">
+            <div className="relative w-fit">
             <MarketExperienceCard/>
-            <img src={foodbg} className=' absolute right-0 bottom-5 z-10 w-32' alt="" />
             <div className="flex flex-col lg:flex-row md:gap-16 gap-2">
                 <div className="lg:w-1/2 ">
                     <img src={featured3} alt="Burger" className="w-full h-auto" />
@@ -78,6 +78,7 @@ export default function FeaturedTab() {
             </div>
 
             <Service/>
+            </div>
         </div>
     )
 }

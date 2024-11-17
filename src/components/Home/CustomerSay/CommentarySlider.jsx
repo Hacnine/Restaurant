@@ -34,8 +34,9 @@ const CommentarySlider = () => {
   };
 
   return (
-    <div className="relative w-full wrapper mx-auto mt- py-5 bg-commentary">
-      <div className="between w-full">
+    <div className="relative w-full mx-auto mt- py-5 bg-commentary">
+     <div className="container wrapper">
+     <div className="between w-full">
         <SectionHeader inspirationWord={"Crispy, Every Bite Test"} title={"What some of our customer say"} />
         <div className="lg:flex items-end justify-end gap-4 hidden">
           <NextPrevButton sliderRef={sliderRef} />
@@ -49,6 +50,7 @@ const CommentarySlider = () => {
       <div className="flex items-center justify-center lg:hidden mt-6 gap-4">
         <NextPrevButton sliderRef={sliderRef} />
       </div>
+     </div>
     </div>
   );
 };

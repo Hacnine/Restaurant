@@ -12,7 +12,7 @@ const FoodCard = ({ product, name, description, image, price, index }) => {
       <p className="font-semibold text-xs font-poppins">{description}</p>
 
       {/* Order Now overlay sliding from bottom */}
-      <Link to={'/order'} className="absolute bottom-0 left-0 right-0 bg-customred flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out h-[40%] flex-col"  onClick={() =>  addOrder(product)} >
+      <Link to={'/order'} className="absolute -bottom-1 left-0 right-0 bg-customred flex items-center justify-center transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out h-[40%] flex-col"  onClick={() =>  addOrder(product)} >
         <span className=' font-bebus text-yellow-500 '>$ {price} </span>
         <span className="text-white font-bebus text-sm tracking-wider border-2 px-2 py-1">Order Now</span>
       </Link>

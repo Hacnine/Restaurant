@@ -5,8 +5,8 @@ import featured2 from '../../assets/images/featured/featured2.png';
 
 const Hero = () => {
     return (
-        <section className=" text-white lg:pt-24 pt-10  bg-hero-bg wrapper relative ">
-            <div className="relative container mx-auto flex flex-col md:flex-row items-start justify-between md:py-20">
+        <section className=" text-white lg:pt-24 pt-10  bg-hero-bg  mx-auto relative ">
+            <div className="relative flex flex-col md:flex-row wrapper w-full container mx-auto items-start justify-between md:py-20">
                 {/* Text Section */}
                 <div className="md:w-1/2 ">
                     <div className="md:absolute top-32  lg:max-w-[700px] md:max-w-[400px] wo "> <h1 className="text-[55px] md:text-[45px] lg:text-[90px] leading-tight md:leading-[1.1] bg-customred/50">Taste the Authentic Saudi Cuisine</h1>

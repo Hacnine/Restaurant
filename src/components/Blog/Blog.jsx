@@ -16,7 +16,7 @@ const Blog = () => {
   }, [location.pathname]);
 
   return (
-    <div className="pb-8">
+    <div className="container mx-auto pb-8">
       <Hero />
       <FeaturedArticles />
       <RecentPosts />
