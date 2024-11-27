@@ -20,7 +20,7 @@ const Sidebar = ({ isOpen, onClose }) => {
             >
                 <div className="between py-6 px-4">
                     <div className="center gap-2">
-                        <img src={"/sitelogo.svg"} alt="Site Logo" />
+                        <img src={"/sitelogo.svg"} className='w-12' alt="Site Logo" />
                         <p className="text-xl font-poppins">Restaurant</p>
                     </div>
                     <button onClick={onClose} className="text-white text-2xl">
