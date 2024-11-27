@@ -1,31 +1,78 @@
 
-import React from 'react';
-import featured1 from '../../assets/images/featured/featured1.png';
-import featured2 from '../../assets/images/featured/featured2.png';
+import React, { useState } from 'react';
 
 const Hero = () => {
-    return (
-        <section className=" text-white lg:pt-24 pt-10  bg-hero-bg  mx-auto relative ">
-            <div className="relative flex flex-col md:flex-row wrapper w-full container mx-auto items-start justify-between md:py-20">
-                {/* Text Section */}
-                <div className="md:w-1/2 ">
-                    <div className="md:absolute top-32  lg:max-w-[700px] md:max-w-[400px] wo "> <h1 className="text-[55px] md:text-[45px] lg:text-[90px] leading-tight md:leading-[1.1] bg-customred/50">Taste the Authentic Saudi Cuisine</h1>
-                        <p className="mb-6 font-poppins font-semibold text-lg max-w-[550px]">
-                            Among the best Saudi chefs in the world, serving you something beyond flavor.
-                        </p>
-                        <button className="bg-yellow-400 text-black py-3 px-6  font-bold">
-                            Explore Menu
-                        </button>
-                     </div>
-                </div>
 
-                {/* Image Section */}
-                <div className="md:w-1/2 mt-10 md:mt-0">
-                    <img src={featured1} className='md:block hidden' alt="Food" />
-                    <img src={featured2} className='md:hidden block' alt="Offer" />
-                </div>
+
+
+    return (
+        <div className="flex flex-col items-center justify-center  bg-hero-bg bg-cover  -mt-20 text-white px-4 h-[750px]">
+            {/* Header */}
+            <div className="mb-6">
+                <h1
+                    data-testid="HomePageHeroHeader"
+                    className="text-3xl md:text-4xl font-bold font-poppins text-center"
+                >
+                    Discover restaurants and more near you.
+                </h1>
             </div>
-        </section>
+
+            {/* Address Input */}
+            <div className="flex flex-col items-center w-full max-w-md space-y-4">
+                <form
+                    autoComplete="off"
+                    className="w-full flex items-center bg-white rounded-full "
+                >
+                    <button
+                        type="button"
+                        aria-label="Find Restaurants"
+                        className="flex w-[40px] items-center justify-center p-3  text-gray-600  mr-1.5"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21c-4.97-5.373-8-9.198-8-12A8 8 0 0112 3a8 8 0 018 6c0 2.802-3.03 6.627-8 12z" />
+                            <circle cx="12" cy="9" r="2.5" fill="currentColor" />
+                        </svg>
+
+                    </button>
+                    {/* Input Field */}
+                    <input
+                        type="text"
+                        placeholder="Enter delivery address"
+                        aria-label="Enter delivery address"
+                        className="flex-grow py-3 px-4 -ml-5 rounded-l-full text-black outline-none"
+                    />
+                    {/* Button */}
+                    <button
+                        type="button"
+                        aria-label="Find Restaurants"
+                        className="flex size-[40px] items-center justify-center p-3 bg-customred rounded-full text-white hover:bg-customred mr-1.5"
+                    >
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                        >
+                            <path
+                                d="M12.2929 17.2929C11.9024 17.6834 11.9024 18.3166 12.2929 18.7071C12.6834 19.0976 13.3166 19.0976 13.7071 18.7071L19.1578 13.2564C19.242 13.1722 19.3427 13.0717 19.4241 12.9758C19.5183 12.8648 19.6439 12.6962 19.7195 12.4635C19.8174 12.1623 19.8174 11.8377 19.7195 11.5365C19.6439 11.3038 19.5183 11.1352 19.4241 11.0242C19.3427 10.9283 19.242 10.8278 19.1578 10.7436L13.7071 5.29289C13.3166 4.90237 12.6834 4.90237 12.2929 5.29289C11.9024 5.68342 11.9024 6.31658 12.2929 6.70711L16.5858 11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44771 13 5 13H16.5858L12.2929 17.2929Z"
+                                fill="currentColor"
+                            ></path>
+                        </svg>
+                    </button>
+                </form>
+
+                {/* Sign-in for saved address */}
+                <button
+                    type="button"
+                    className="bg-white text-gray-600 font-semibold py-3 text-xs px-6 rounded-full hover:bg-yellow-500"
+                >
+                    Sign in for saved address
+                </button>
+
+            </div>
+        </div>
     );
 };
 

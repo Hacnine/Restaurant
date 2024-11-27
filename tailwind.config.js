@@ -44,7 +44,7 @@ export default {
       },
       colors: {
         
-        "customred": "#BD1F17",
+        "customred": "#f24122",
         "ligherpink": "#faf7f2"
       
         

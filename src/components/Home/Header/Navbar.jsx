@@ -13,15 +13,27 @@ const Navbar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
 
+    const [color, setColor] = useState("bg-transparent ");
+    const changeColor = () => {
+        if (window.scrollY >= 20) {
+            setColor(
+                "backdrop-blur-sm bg-customred/90"
+            );
+        } else {
+            setColor("bg-transparent text-white-green");
+        }
+    };
+    window.addEventListener("scroll", changeColor);
+
     return (
-        <div className="sticky top-0 z-50 w-full bg-hero-bg ">
+        <div className={`sticky top-0 z-50 w-full ${color}`}>
             <div className=" container  mx-auto wrapper  w-full relative z-40">
                 <div className="bg-transparent text-white">
                     <div className="flex justify-between items-center  py-4">
                         <div className="flex items-center gap-10">
-                            <Link to={'/'} className="flex items-center gap-2">
-                                <img src={"/sitelogo.svg"} alt="Site Logo" />
-                                <p className="text-4xl font-poppins">Restaurant</p>
+                            <Link to={'/'} className="flex items-center gap-2 ">
+                                <img src={"/sitelogo.svg"} className='w-12' alt="Site Logo" />
+                                <p className="text-4xl font-poppins">Arab Cuisine</p>
                             </Link>
                             <nav className="hidden text-lg lg:flex space-x-6">
                                 <Link to={'/'} className={`border-b-2 ${location.pathname === '/' ? " border-yellow-400" : "text-white border-transparent"} hover:text-yellow-400 `}>Home</Link>

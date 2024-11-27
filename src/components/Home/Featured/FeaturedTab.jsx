@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import featured3 from '../../../assets/images/featured/featured3.png';
+import featured3 from '../../../assets/images/featured/featured3.jpg';
 import foodbg from '../../../assets/images/background/firstfeaturebg.svg';
 import Service from './Service';
 import MarketExperienceCard from './MarketExperienceCard';
