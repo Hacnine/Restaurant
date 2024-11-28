@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Sidebar from './Sidebar';
 import { Link, useLocation } from 'react-router-dom';
 import TotalOrder from '../../Common/TotalOrder';
@@ -6,24 +6,43 @@ import { useOrder } from '../../../context/OrderContext';
 
 const Navbar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-    const location = useLocation();
     const { orders } = useOrder();
+    const location = useLocation(); // React Router hook to access the current location
+
+    const [color, setColor] = useState("bg-transparent");
+
+    // Set the initial color based on the current pathname
+    useEffect(() => {
+        if (location.pathname === '/') {
+            setColor('bg-transparent');
+        } else {
+            setColor('bg-customred');
+        }
+    }, [location.pathname]); // Re-run when pathname changes
+
+    // Change color based on scroll position
+    useEffect(() => {
+        const changeColor = () => {
+            if (window.scrollY >= 20) {
+                setColor("backdrop-blur-sm bg-customred/90");
+            } else if (location.pathname === '/') {
+                setColor("bg-transparent text-white-green");
+            } else {
+                setColor("bg-customred");
+            }
+        };
+
+        window.addEventListener("scroll", changeColor);
+
+        // Cleanup event listener on unmount
+        return () => {
+            window.removeEventListener("scroll", changeColor);
+        };
+    }, [location.pathname]); // Re-run when pathname changes to ensure correct behavior
 
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
-    };
-
-    const [color, setColor] = useState("bg-transparent ");
-    const changeColor = () => {
-        if (window.scrollY >= 20) {
-            setColor(
-                "backdrop-blur-sm bg-customred/90"
-            );
-        } else {
-            setColor("bg-transparent text-white-green");
-        }
-    };
-    window.addEventListener("scroll", changeColor);
+    }
 
     return (
         <div className={`sticky top-0 z-50 w-full ${color}`}>
@@ -33,7 +52,7 @@ const Navbar = () => {
                         <div className="flex items-center gap-10">
                             <Link to={'/'} className="flex items-center gap-2 ">
                                 <img src={"/sitelogo.svg"} className='w-12' alt="Site Logo" />
-                                <p className="text-4xl font-poppins">Arab Cuisine</p>
+                                <p className=" text-2xl font-poppins"><span className=" text-yellow-500 text-4xl">A</span>rab <span className=" text-yellow-500 text-4xl">C</span>uisine</p>
                             </Link>
                             <nav className="hidden text-lg lg:flex space-x-6">
                                 <Link to={'/'} className={`border-b-2 ${location.pathname === '/' ? " border-yellow-400" : "text-white border-transparent"} hover:text-yellow-400 `}>Home</Link>
@@ -52,10 +71,10 @@ const Navbar = () => {
                         </div>
 
                         <div className="lg:hidden flex items-center gap-3">
-                        <TotalOrder />
-                        <button onClick={toggleSidebar} className="text-white text-2xl ">
-                            <img src="/icon/menu.svg" alt="Menu Icon" />
-                        </button>
+                            <TotalOrder />
+                            <button onClick={toggleSidebar} className="text-white text-2xl ">
+                                <img src="/icon/menu.svg" alt="Menu Icon" />
+                            </button>
                         </div>
                     </div>
                 </div>

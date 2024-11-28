@@ -2,7 +2,7 @@ import React from 'react'
 
 const Values = () => {
     return (
-        <section className="bg-gray-100 p-8 rounded-md shadow-md mb-12 ">
+        <section className="bg-gray-100 p-8 rounded-md  mb-12 ">
             <h2 className="text-2xl  text-center text-gray-800 mb-6">Our Values</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 container mx-auto wrapper">
                 <div className="text-center">

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Categories = () => {
     return (
-        <section className="bg-gray-100 py-8 px-6  wrapper shadow-md mb-12" container mx-auto >
+        <section className="bg-gray-100 py-8 px-6  wrapper  mb-12" container mx-auto >
             <h2 className="text-2xl  text-center text-gray-800 mb-6">Categories</h2>
             <div className="flex flex-wrap justify-center gap-4">
                 <button className="bg-white px-6 py-3  shadow-md text-gray-700 hover:bg-customred hover:text-white transition">Recipes</button>
