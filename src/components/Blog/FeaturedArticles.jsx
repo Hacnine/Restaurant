@@ -6,7 +6,7 @@ const FeaturedArticles = () => {
             <h2 className="text-2xl  text-gray-800 mb-6 mt-20">Featured Articles</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {/* Featured Article 1 */}
-                <div className="bg-white  shadow-md overflow-hidden">
+                <div className="bg-white  shadow-md overflow-hidden rounded-t-3xl">
                     <img src='/blog/featuredImage1.jpg' alt="Featured 1" className="w-full h-48 object-cover" />
                     <div className="p-6">
                         <h3 className="text-xl  mb-2 text-gray-800">The Art of Culinary Mastery</h3>
@@ -15,7 +15,7 @@ const FeaturedArticles = () => {
                     </div>
                 </div>
                 {/* Featured Article 2 */}
-                <div className="bg-white  shadow-md overflow-hidden">
+                <div className="bg-white  shadow-md overflow-hidden rounded-t-3xl ">
                     <img src="/blog/featuredImage2.jpg" alt="Featured 2" className="w-full h-48 object-cover" />
                     <div className="p-6">
                         <h3 className="text-xl  mb-2 text-gray-800">10 Ingredients You Need in Your Kitchen</h3>

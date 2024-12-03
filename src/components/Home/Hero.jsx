@@ -6,12 +6,12 @@ const Hero = () => {
 
 
     return (
-        <div className="flex flex-col items-center justify-center  bg-hero-bg bg-cover  -mt-20 text-white px-4 h-[750px]">
+        <div className="flex flex-col items-center justify-center  md:bg-hero-bg bg-hero-sm bg-cover overflow-hidden -mt-20 text-white px-4 h-[750px]">
             {/* Header */}
             <div className="mb-6">
                 <h1
                     data-testid="HomePageHeroHeader"
-                    className="text-3xl md:text-4xl font-bold font-poppins text-center"
+                    className="text-3xl md:text-4xl font-semibold font-poppins text-center capitalize"
                 >
                     Discover restaurants and more near you.
                 </h1>

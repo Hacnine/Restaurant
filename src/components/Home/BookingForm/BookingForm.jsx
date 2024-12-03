@@ -74,7 +74,7 @@ const BookingForm = () => {
   };
 
   return (
-    <div className="bg-booking bg-cover   text-white px-8  pt-6 pb-14 ">
+    <div className="bg-booking bg-cover   text-white  pt-6 pb-14 ">
       <div className="container mx-auto wrapper">
         <SectionHeader inspirationWord={"Book Now"} title={"BOOK YOUR TABLE"} />
 

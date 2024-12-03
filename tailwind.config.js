@@ -17,6 +17,8 @@ export default {
 
       backgroundImage: {
         'hero-bg':  "url('/src/assets/images/background/bg2.svg')",
+        'hero-sm':  "url('/src/assets/images/background/bg4.svg')",
+
         'fooditem': "url('/src/assets/images/background/bg3.svg')",
         'booking': "url('/src/assets/images/background/booking.svg')",
         'commentary': "url('/src/assets/images/background/commentarybg.svg')",

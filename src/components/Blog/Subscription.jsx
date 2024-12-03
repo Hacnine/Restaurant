@@ -8,8 +8,8 @@ const Subscription = () => {
                 Get the latest updates on recipes, cooking tips, and exclusive offers directly to your inbox.
             </p>
             <form className="flex flex-col md:flex-row items-center container mx-auto  justify-center gap-4">
-                <input type="email" placeholder="Enter your email" className="p-3  text-gray-800 focus:outline-none w-full md:w-auto" />
-                <button className="bg-white text-customred  py-2 px-6  shadow-md hover:bg-gray-200">
+                <input type="email" placeholder="Enter your email" className="p-3  text-gray-800 focus:outline-none rounded-2xl w-full md:w-auto" />
+                <button className="bg-white text-customred rounded-2xl  py-2 px-6  shadow-md hover:bg-gray-200">
                     Subscribe
                 </button>
             </form>
