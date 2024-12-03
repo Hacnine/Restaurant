@@ -51,7 +51,7 @@ const ContactForm = () => {
     };
 
     return (
-        <section className="bg-slate-900 p-8 shadow-md mb-12  wrapper">
+        <section className="bg-slate-900 py-8 shadow-md mb-12  ">
             <div className="container wrapper">
             <h2 className="text-2xl mb-6 text-white">Send Us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-6 ">
@@ -93,7 +93,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     required
                 ></textarea>
-                <button type="submit" className="bg-yellow-500 text-white py-3 px-6 shadow-md hover:bg-red-700 transition duration-300">
+                <button type="submit" className="bg-yellow-500 text-white py-3 px-6 shadow-md hover:bg-customred transition duration-300">
                     Send Message
                 </button>
             </form>
